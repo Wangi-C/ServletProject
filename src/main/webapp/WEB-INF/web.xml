@@ -7,7 +7,23 @@
         <servlet-name>first</servlet-name>
         <servlet-class>org.swclass.servletproject.FirstServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>second</servlet-name>
+        <servlet-class>org.swclass.servletproject.SecondServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addInfo</servlet-name>
+        <servlet-class>org.swclass.servletproject.AdditionalInfoServlet</servlet-class>
+    </servlet>
     
+    <servlet-mapping>
+        <servlet-name>addInfo</servlet-name>
+        <url-pattern>/addInfo/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>second</servlet-name>
+        <url-pattern>/jieun</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>first</servlet-name>
         <url-pattern>/hello</url-pattern>
